@@ -1,0 +1,2 @@
+Hello!
+TIME=2018-02-28 12:17:53,494, __main__, [INFO] : hell
