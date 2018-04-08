@@ -37,6 +37,7 @@ def server_worker(client_socket, address, tf_graph, pic_num):
     recieve_string= recieve_string[:-5]
     logger.info("Client submitted URL %s" % recieve_string)
     request.urlretrieve(recieve_string, "images/%d.jpg" % pic_num)
+    print("get the pic")
 
     logger.info("finish download")
 

@@ -37,7 +37,7 @@ def main():
 
     msg = sys.argv[3]
     msg = msg + "[END]"
-    logger.info(msg)
+    #logger.info(msg)
 
     msg = msg.encode("utf-8")
     soc.send(msg)

@@ -121,7 +121,7 @@ def main():
         logger.error("you should set arguments, port number, the number of processor:")
 
     try:
-        server_socket.bind(('localhost', int(sys.argv[1])))
+        server_socket.bind(("0.0.0.0", int(sys.argv[1])))
         PROCESS_NUM = int(sys.argv[2])
     except:
         logger.error("Cannot set server localhost:%s" % sys.argv[1])
